@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Book Details</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Book Details</h2>
+
+    <p>ID: <span th:text="${book.id}"></span></p>
+    <p>Title: <span th:text="${book.title}"></span></p>
+    <p>Author: <span th:text="${book.author}"></span></p>
+    <p>Price: <span th:text="${book.price}"></span></p>
+
+    <a href="/books/view">Back</a>
+
+</div>
+</body>
+</html>
